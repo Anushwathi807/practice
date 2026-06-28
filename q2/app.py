@@ -20,17 +20,6 @@ class Trie:
             node = node.children[char]
         node.is_end = True
 
-    # def find_prefix(self, word):
-    #     node = self.root
-    #     prefix = ""
-    #     for char in word:
-    #         if char not in node.children:
-    #             return None
-    #         prefix += char
-    #         node = node.children[char]
-    #         if len(node.children) == 0 or node.is_end:
-    #             return prefix
-    #     return prefix
     def find_prefix(self, word):
         node = self.root
         prefix = ""
